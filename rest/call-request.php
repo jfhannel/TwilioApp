@@ -23,7 +23,7 @@
 		$call = $client->account->calls->create(
 			'+15033510708', // The number of the phone initiating the call
 			$phonenumber, // The number of the phone receiving call
-			'https://drive.google.com/file/d/0ByqdOBWF2BXUTlF6LWVsTjEyT28' // The URL Twilio will request when the call is answered
+			'https://raw.githubusercontent.com/jfhannel/TwilioApp/master/rest/handle_call.xml' // The URL Twilio will request when the call is answered
 		);
 		echo 'Started call: ' . $call->sid;
 	} catch (Exception $e) {
